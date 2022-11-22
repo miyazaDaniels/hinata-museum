@@ -11,7 +11,7 @@
     </v-main>
 
     <v-footer>
-      <v-card-text>日向美術館</v-card-text>
+      <v-card-text>&copy; 2022 日向美術館</v-card-text>
     </v-footer>
   </v-app>
 </template>
