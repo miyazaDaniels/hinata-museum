@@ -57,7 +57,7 @@ export default {
         });
     },
     updateOffset(totalCount) {
-      if (this.offset > totalCount) {
+      if (this.offset + FETCH_LIMIT > totalCount) {
         this.hasMoreData = false;
       } else {
         this.offset += FETCH_LIMIT;
