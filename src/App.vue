@@ -19,12 +19,6 @@
 <script>
 export default {
   name: "App",
-  data: () => ({
-    items: [
-      { title: "Home", to: "/" },
-      { title: "About", to: "/about" },
-    ],
-  }),
 };
 </script>
 
