@@ -16,6 +16,8 @@
 <script>
 import { createClient } from "microcms-js-sdk";
 import WorkItem from "../components/WorkItem.vue";
+
+const MICROCMS_API_KEY = process.env.VUE_APP_MICROCMS_API_KEY
 const FETCH_LIMIT = 10;
 
 export default {
@@ -34,7 +36,7 @@ export default {
   created() {
     this.client = createClient({
       serviceDomain: "hinata-museum",
-      apiKey: "fb80446547044911b4e4273a2034314f0820",
+      apiKey: MICROCMS_API_KEY,
     });
   },
   methods: {
