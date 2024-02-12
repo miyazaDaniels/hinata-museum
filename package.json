@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.33.0",
-    "microcms-js-sdk": "^2.3.2",
+    "microcms-js-sdk": "^2.7.0",
     "vue": "^2.6.14",
     "vue-router": "^3.6.5",
     "vuetify": "^2.7.1"
