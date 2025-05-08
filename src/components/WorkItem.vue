@@ -1,7 +1,7 @@
 <template>
-  <v-card>
-    <v-img :src="url"></v-img>
-    <v-card v-if="work.caption" class="mt-3 mx-3 mb-2 pa-2 caption">
+  <v-card class="work-item">
+    <v-img :src="url" class="work-image"></v-img>
+    <v-card v-if="work.caption" class="mt-3 mx-3 mb-2 pa-3 caption">
       <div v-if="work.title" class="mb-2">
         <p v-if="work.title" class="title">{{ work.title }}</p>
         <p v-if="work.englishTitle" class="english-title">
@@ -35,24 +35,55 @@ export default {
 </script>
 
 <style scoped>
+.work-item {
+  margin: 8px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.work-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .caption {
   text-align: center;
 }
 
 .title {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-.creator,
-.comment {
-  margin: 0;
-  font-size: 0.7em;
+.english-title {
+  margin: 4px 0 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #666;
 }
+
+.creator {
+  margin: 8px 0 0;
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 .materials,
 .size {
-  margin: 0;
-  font-size: 0.65em;
-  line-height: normal;
+  margin: 4px 0 0;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: #666;
+}
+
+.comment {
+  margin: 8px 0 0;
+  font-size: 0.85em;
+  line-height: 1.6;
+  color: #444;
 }
 </style>
