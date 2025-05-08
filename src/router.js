@@ -1,15 +1,16 @@
-import Vue from "vue";
-import Router from "vue-router";
-import HomePage from "./views/HomePage.vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from "./views/HomePage.vue"
 
-Vue.use(Router);
+const routes = [
+  {
+    path: "/",
+    component: HomePage,
+  },
+]
 
-export default new Router({
-  mode: "history",
-  routes: [
-    {
-      path: "/",
-      component: HomePage,
-    },
-  ],
-});
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+export default router

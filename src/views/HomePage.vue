@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-container>
-      <v-row dense>
-        <v-col v-for="work in works" :key="work.id" class="py-1">
+    <v-container class="pa-4">
+      <v-row>
+        <v-col v-for="work in works" :key="work.id" cols="12" sm="6" class="pa-2">
           <WorkItem :work="work"></WorkItem>
         </v-col>
       </v-row>
