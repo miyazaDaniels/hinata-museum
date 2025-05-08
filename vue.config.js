@@ -1,5 +1,4 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
+module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
@@ -9,4 +8,4 @@ module.exports = defineConfig({
       title: "日向美術館"
     }
   }
-})
+}
