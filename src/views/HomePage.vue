@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-container class="pa-4">
-      <v-row>
-        <v-col v-for="work in works" :key="work.id" cols="12" sm="6" class="pa-2">
+      <div class="d-flex flex-wrap">
+        <div v-for="work in works" :key="work.id" class="work-column pa-2">
           <WorkItem :work="work"></WorkItem>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
       <div v-if="hasMoreData" v-intersect="onIntersect" class="loading">
         <v-progress-circular v-if="isLoading" indeterminate />
       </div>
@@ -79,5 +79,15 @@ export default {
 .loading {
   margin: 10px;
   text-align: center;
+}
+
+.work-column {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .work-column {
+    width: 100%;
+  }
 }
 </style>
