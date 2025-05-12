@@ -13,7 +13,7 @@
     "@vue/cli-plugin-router": "^5.0.8",
     "@vue/cli-plugin-vuex": "^5.0.8",
     "core-js": "^3.36.1",
-    "microcms-js-sdk": "^2.7.0",
+    "microcms-js-sdk": "^3.2.0",
     "vue-loader": "^17.4.2",
     "vue-router": "^4.5.1",
     "vuetify": "^3.8.4"
