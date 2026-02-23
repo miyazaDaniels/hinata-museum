@@ -16,7 +16,7 @@
     "microcms-js-sdk": "^3.2.0",
     "vue-loader": "^17.4.2",
     "vue-router": "^4.5.1",
-    "vuetify": "^3.8.4"
+    "vuetify": "^3.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
